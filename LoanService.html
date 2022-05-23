@@ -61,16 +61,20 @@
         }
 
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <script>
         $(document).ready(function () {
 		
         var list1 = document.getElementById('loanTypes');
     
-        list1.options[0] = new Option('--Select--', '');
+        list1.options[0] = new Option('Personal', 'Personal');
         list1.options[1] = new Option('Home', 'Home');
         list1.options[2] = new Option('Car', 'Car');
         });
     </script>
+    
 </head>
   
 <body>
@@ -89,9 +93,9 @@
 
         <label>Type :</label>
         <select class="form-control" id="loanTypes" name="loanTypes">
-            <option value="home">Home</option>
+            <!-- <option value="home">Home</option>
             <option value="car">Car</option>
-            <option value="personal">Personal</option>
+            <option value="personal">Personal</option> -->
         </select>
   
         <label>Interest Rate :</label>
