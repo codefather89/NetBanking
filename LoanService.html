@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>Loan Calculator</title>
+  
+    <style>
+        body {
+            background-image:url(/britain-bank-of-england.jpg);
+            background-color: mintcream    ;
+            font-family: 'Trebuchet MS';
+        }
+          
+        h1 {
+            font-size: 35px;
+        }
+          
+        h1 {
+            font-size: 21px;
+            margin-top: 20px;
+        }
+          
+        .calculator {
+            width: 500px;
+            height: 450px;
+            background-color: rgba(139, 172, 188, 0.4);
+                position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 20px 0px 0px 100px;
+            border-radius: 50px;
+            color: black;
+        }
+          
+        input {
+            display: block;
+            padding: 7px;
+            width: 70%;
+            margin-top: 7px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        label{
+            display: inline-block ;
+            clear: left;
+            width: 250px;
+            text-align: left;
+            border: none;
+            border-radius: 4px;
+        }
+
+        select {
+            display: block;
+            padding: 7px;
+            width: 70%;
+            margin-top: 7px;
+            border: none;
+            border-radius: 4px;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function () {
+		
+        var list1 = document.getElementById('loanTypes');
+    
+        list1.options[0] = new Option('--Select--', '');
+        list1.options[1] = new Option('Home', 'Home');
+        list1.options[2] = new Option('Car', 'Car');
+        });
+    </script>
+</head>
+  
+<body>
+    <div class="calculator">
+        <h1>Loan Calculator</h1>
+  
+        <!-- Calling Calculate function defined in app.js -->
+
+        <label>Applicant :</label> 
+            <input id="applicant" type="text"
+            onchange="Calculate()">
+        
+        <label>Amount (₹) :</label>
+            <input id="amount" type="number" 
+            onchange="Calculate()">
+
+        <label>Type :</label>
+        <select class="form-control" id="loanTypes" name="loanTypes">
+            <option value="home">Home</option>
+            <option value="car">Car</option>
+            <option value="personal">Personal</option>
+        </select>
+  
+        <label>Interest Rate :</label>
+            <input id="rate" type="number" 
+            onchange="Calculate()">
+        
+        <label>Duration:</label>
+            <input id="months" type="number" 
+            onchange="Calculate()">
+  
+        <h2 id="total"></h2>
+    </div>
+  
+    <script src="loan.js"></script>
+</body>
+  
+</html>
