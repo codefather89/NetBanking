@@ -1,0 +1,48 @@
+body{
+    /* background-image: "britain-bank-of-england.jpg"; */
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li{
+    float: right;
+    width: 200px;
+    height: 40px;
+    background-color:goldenrod;
+    opacity: .9;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(8, 7, 4);
+    display: block;
+}
+
+ul li a:hover{
+    background-color: lightsalmon;
+}
+
+ul li ul li {
+    display: none;
+}
+
+ul li:hover ul li{
+    display: block;
+}
+
+    .img-bank {
+        width: 1250px;
+        height: 600px;
+        background : url(britain-bank-of-england.jpg);
+        background-size: 50%;
+
+    }

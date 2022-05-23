@@ -2,7 +2,8 @@
 <html>
     <head>
         <title> Our bank</title>
-        <style>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- <style>
         ul {
             list-style-type: none;
             padding: 0;
@@ -19,7 +20,8 @@
                   display: block;  
                   line-height:40px;
                  padding-left:10px;
-               }</style>
+               }
+        </style> -->
     </head>
 
     <body>
@@ -29,24 +31,33 @@
 
         <hr>
     <div class="flex-list">
-        <ul style="list-style-type:none;"">
+        <ul style="list-style-type:none;">
             <li style="float:right;">
                 <a href="ContactUs.html">Contact Us</a></li>
             <li style="margin-right: 30px; float:right;"><a href="AboutUs.html">About us</a></li>
-            <li style="margin-right: 30px; float:right;">Services</li>
+            <li style="margin-right: 30px; float:right;"><a href="#">Services</a>
+                <ul>
+                    <li><a href="LoanService.html">Loan</a></li>
+                    <li><a href="DepositService.html">Deposit</a></li>
+                </ul>
+            </li>
             <li style="margin-right: 30px; float:right;">Net Banking</li>
             <li style="margin-right: 30px; float:right;">Home   </li>
         </ul>
     </div>
 
-    <img src="britain-bank-of-england.jpg" height=600 width=1250>
-
-
-    <div style="position:relative; bottom: 5px; ">
-        <centre>www.ourbank.com</centre>
+    <!-- <img class="img-bank" src="britain-bank-of-england.jpg" alt="img bank"> -->
+    <div class="img-bank" style="background: url(/britain-bank-of-england.jpg); background-size: 100% 100%"> 
+        <section class="D2-content-teaser  D2-background-transparent  u-copy-left" data-scroll-fade="true"> 
+        </section> 
     </div>
 
-    <hr style="margin-bottom: 30px;  width:50%; border-bottom:0;" >
+
+    <!-- <div style="position:relative; bottom: 5px; ">
+        <centre>www.ourbank.com</centre>
+    </div> -->
+
+    <!-- <hr style="margin-bottom: 30px;  width:50%; border-bottom:0;" > -->
 
     </body>
 
